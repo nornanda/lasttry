@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizza Restaurant">
+    <meta name="keywords" content="pizza, food, restaurant, italian food">
+    <meta name="author" content="Anastasia Permiakova">
+	<title>Pizza Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+    <meta property="og:title" content="Pizza Restaurant">
+    <meta property="og:description" content="Italian Pizza in Prague">
+</head>
+<body>
+	<header>
+		<h1 itemprop="name">Pizza Restaurant</h1>
+	    <meta itemprop="description" content="Pizza WebSite">
+        <p>Open Monday-Saturday, 11am-10pm</p>
+        <nav itemprop="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul>
+		<li><a href="#menu" itemprop="url">Menu</a></li>
+		<li><a href="#reservation" itemprop="url">Reservation</a></li>
+		<li><a href="#contact" itemprop="url">Contact</a></li>
+            </ul>
+        </nav>
+	</header>
+    
+	<section id="menu">
+  <h2>Our Menu</h2>
+  <ul>
+    <li itemprop="menu" itemscope itemtype="http://schema.org/MenuItem">
+      <h3 itemprop="name">Pizza Margherita</h3>
+      <p itemprop="description">Tomato sauce, mozzarella, and fresh basil</p>
+      <p itemprop="price">$10.99</p>
+    </li>
+    <li itemprop="menu" itemscope itemtype="http://schema.org/MenuItem">
+      <h3 itemprop="name">Pepperoni Pizza</h3>
+      <p itemprop="description">Tomato sauce, mozzarella, and pepperoni</p>
+      <p itemprop="price">$12.99</p>
+    </li>
+    <li itemprop="menu" itemscope itemtype="http://schema.org/MenuItem">
+      <h3 itemprop="name">Hawaiian Pizza</h3>
+      <p itemprop="description">Tomato sauce, mozzarella, ham, and pineapple</p>
+      <p itemprop="price">$13.99</p>
+    </li>
+    <li itemprop="menu" itemscope itemtype="http://schema.org/MenuItem">
+      <h3 itemprop="name">Veggie Pizza</h3>
+      <p itemprop="description">Tomato sauce, mozzarella, mushrooms, green peppers, onions, and olives</p>
+      <p itemprop="price">$14.99</p>
+    </li>
+  </ul>
+</section>
+
+<section id="reservation" itemscope itemtype="http://schema.org/EventReservation">
+  <h2>Reservation</h2>
+  <form itemprop="reservation" itemscope itemtype="http://schema.org/Reservation">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required itemprop="underName">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required itemprop="email">
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required itemprop="telephone">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required itemprop="reservationFor" itemtype="http://schema.org/Event">
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required itemprop="partySize">
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+    
+<section id="news">
+  <h2>Latest News</h2>
+  <ul>
+    <li>
+      <h3>Grand Opening!</h3>
+      <p>We are excited to announce the grand opening of our new location in downtown!</p>
+      <p><em>Posted on April 1, 2023</em></p>
+    </li>
+    <li>
+      <h3>New Pizza on the Menu!</h3>
+      <p>Introducing our new BBQ Chicken Pizza with tangy BBQ sauce, chicken, red onions, and mozzarella cheese.</p>
+      <p><em>Posted on March 15, 2023</em></p>
+    </li>
+    <li>
+      <h3>Happy Hour Specials!</h3>
+      <p>Join us for happy hour from 3pm-5pm Monday-Friday and enjoy half-priced drinks and appetizers!</p>
+      <p><em>Posted on March 1, 2023</em></p>
+    </li>
+  </ul>
+</section>
+	<section id="contact" itemscope itemtype="http://schema.org/Organization">
+  <h2>Contact Us</h2>
+  <div class="contact-info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <h3>Contact Information</h3>
+    <p><span itemprop="streetAddress">123 Main St</span>, <span itemprop="addressLocality">Anytown</span>, <span itemprop="addressRegion">CZ</span></p>
+    <p>Phone: <span itemprop="telephone">+420 779 837 492</span></p>
+    <p>Email: <a href="mailto:info@pizzarestaurant.com" itemprop="email">info@pizzarestaurant.com</a></p>
+  </div>
+</section>
+
+	<footer>
+		<p>&copy; 2023 Pizza Restaurant</p>
+	</footer>
+</body>
+</html>

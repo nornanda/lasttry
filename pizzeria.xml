@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pizzeria>
+  <menu>
+    <item>
+      <name>Название блюда</name>
+      <description>Описание блюда</description>
+      <price>Цена блюда</price>
+    </item>
+    <item>
+      <name>Название блюда</name>
+      <description>Описание блюда</description>
+      <price>Цена блюда</price>
+    </item>
+    <!-- Добавьте здесь остальные элементы меню -->
+  </menu>
+  <contact>
+    <name>Название пиццерии</name>
+    <address>Адрес</address>
+    <phone>Номер телефона</phone>
+    <email>Адрес электронной почты</email>
+  </contact>
+  <opening-hours>
+    <day>
+      <name>Название дня</name>
+      <hours>Часы работы</hours>
+    </day>
+    <day>
+      <name>Название дня</name>
+      <hours>Часы работы</hours>
+    </day>
+    <!-- Добавьте здесь остальные дни -->
+  </opening-hours>
+  <news>
+    <item>
+      <title>Заголовок новости</title>
+      <date>Дата новости</date>
+      <description>Описание новости</description>
+    </item>
+    <item>
+      <title>Заголовок новости</title>
+      <date>Дата новости</date>
+      <description>Описание новости</description>
+    </item>
+    <!-- Добавьте здесь остальные новости -->
+  </news>
+</pizzeria>
